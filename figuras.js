@@ -95,3 +95,35 @@ function calcularAreaCuadrado() {
   const area = areaCuadrado(value);
   alert(area);
 }
+
+function calcularAlturaTriangulo() {
+  const ladoa = document.getElementById("lado1Triangulo").value;
+  const ladob = document.getElementById("lado2Triangulo").value;
+  const ladoc = document.getElementById("lado3Triangulo").value;
+
+  const alturaTriangulo = alturaTrianguloIsosceles(ladoa, ladob, ladoc);
+  if (alturaTriangulo != 0) {
+    alert("La altura del triangulo es: " + alturaTriangulo);
+  } else {
+    alert(
+      "Este programa fue diseñado para calcular la altura del triangulo isosceles"
+    );
+  }
+
+  function alturaTrianguloIsosceles(ladoa, ladob, ladoc) {
+    switch (true) {
+      case ladoa == ladob:
+        let alturaA = Math.sqrt(ladoa * ladoa - (ladob * ladob) / 4);
+        return alturaA;
+      case ladoa == ladoc:
+        let alturaB = Math.sqrt(ladoa * ladoa - (ladoc * ladoc) / 4);
+        return alturaB;
+      case ladob == ladoc:
+        let alturaC = Math.sqrt(ladob * ladob - (ladoc * ladoc) / 4);
+        return alturaC;
+      default:
+        let altura = 0;
+        return altura;
+    }
+  }
+}
