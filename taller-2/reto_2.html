@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupones</title>
+    <link rel="stylesheet" href="./taller-1/style.css">
+</head>
+<body>
+    <header>
+        <h1>Implementación de cupones en los productos</h1>
+    </header>
+    <section>
+        <form >
+            <label  for="inputProducto">Ingrese el nombre de su producto: </label>
+            <input class="input" id="inputProducto" type="text"/>
+            <label for="inputPrecio">Ingrese el precio del producto: </label>
+            <input class="input" id="inputPrecio" type="number">
+            <label  for="inputCupon">Escriba el cupón de descuento para su producto: </label>
+            <input class="input" id="inputCupon" type="text"/>
+            <button type="button" onclick="cuponDescuento()">Comprar</button>
+            <p id="Resultado"></p>
+        </form>
+    </section>
+    <!-- <script src="./taller-2/descuentos.js"></script> -->
+    <script src="./taller-2/cupon-reto2.js"></script>
+</body>
+</html>
