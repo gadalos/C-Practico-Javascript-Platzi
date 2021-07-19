@@ -1,5 +1,3 @@
-// const lista = [10, 20, 30, 10, 20, 30, 40, 50, 10];
-
 function calcularModa() {
   entradaModa = document.getElementById("inputModa");
   modaValue = entradaModa.value;
